@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>Bodega</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Boleta.jasper</name>
+			<type>1</type>
+			<location>C:/FRANCO/Bodega/reportes/Boleta.jasper</location>
+		</link>
+		<link>
+			<name>Productos.xlsx</name>
+			<type>1</type>
+			<location>C:/FRANCO/Productos.xlsx</location>
+		</link>
+		<link>
+			<name>reportes/Boleta.jrxml</name>
+			<type>1</type>
+			<location>C:/FRANCO/Bodega/reportes/Boleta.jrxml</location>
+		</link>
+	</linkedResources>
+</projectDescription>
