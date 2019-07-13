@@ -1,0 +1,167 @@
+package animales;
+
+public class Animal {
+
+	
+	private int edad;
+	private String Sexo;
+	
+	public Animal(String Sexo, int edad) {
+		this.Sexo=Sexo;
+		this.edad=edad;
+	}
+
+	public int getEdad() {
+	 	 return edad; 
+	}
+	
+	public void setEdad(int edad) { 
+		 this.edad = edad; 
+	}
+	
+	public String getSexo() {
+	 	 return Sexo; 
+	}
+	
+	public void setSexo(String Sexo) { 
+		 this.Sexo = Sexo; 
+	}
+	
+	public void hablar(String respuesta) { 
+		// TODO Auto-generated method
+	 }
+
+	public String hablar() {
+		// TODO Auto-generated method stub
+		return null;
+	} 
+	
+}
+package animales;
+
+public class Hombre extends Animal {
+
+	private String dni;
+	
+	public Hombre(String Sexo,String dni, int edad) {
+		super(Sexo, edad);
+		this.dni=dni;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override	
+	public String hablar() {
+		return "Hola";
+	}
+	
+	public String getDni() {
+		return dni;
+	}
+
+	public void setDni(String dni) {
+		this.dni = dni;
+	}
+
+	public void caminar() { 
+		// TODO Auto-generated method
+	 } 
+
+}
+package animales;
+
+public class Perro extends Animal {
+	
+	private String nombre;
+	public Perro(String Sexo,String nombre, int edad) {
+		super(Sexo, edad);
+		this.nombre=nombre;
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void caminar() { 
+		// TODO Auto-generated method
+	 } 
+	
+	@Override
+	public String hablar() {
+		return "Guau";
+	}
+
+}
+package animales;
+
+public class Gato extends Animal {
+	
+	private int npatas;
+
+	public Gato(String Sexo,int npatas, int edad) {
+		super(Sexo, edad);
+		this.npatas=npatas;
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getNpatas() {
+		return npatas;
+	}
+	
+	public void setNpatas(int npatas) {
+		this.npatas = npatas;
+	}
+	
+	public void caminar() { 
+		// TODO Auto-generated method
+	 } 
+	@Override
+	public String hablar() {
+		return "Miau";
+	}
+
+}
+package animales;
+
+public class seas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Animal ani=new Animal("Masculine",19);
+		
+		Gato michi = new Gato("Macho",4,3);
+		
+		System.out.println("Sexo: "+ michi.getSexo());
+		
+		Animal[] animales = new Animal[3];
+		
+		animales[0] = new Gato ("Hembra",4,12);
+		animales[1] = new Perro ("Macho","Panchita",34);
+		animales[2] = new Hombre ("Hembra","333333",54);
+		
+		for( Animal ani:animales){
+			System.out.println("Sexo: "+ani.hablar());
+			System.out.println("Sexo: "+ani.getSexo());
+		}
+		
+		double[] numeros={1,3,2,6,4,3,0};
+		for(double num:numeros){
+			System.out.println(num);
+				
+		}
+		for(int x=0;x<animales.length;x++){
+			
+			System.out.println(animales[x].getEdad());
+		}
+		
+		
+	}
+
+}
